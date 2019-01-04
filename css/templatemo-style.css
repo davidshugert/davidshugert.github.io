@@ -274,9 +274,10 @@ a:hover, a:active, a:focus {
     color: #333;
 	text-shadow: 1px 1px #fff;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 4vh;
     letter-spacing: 1px;
+    vertical-align: middle; 
 }
 
 .custom-navbar .nav li a {
@@ -434,12 +435,20 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #experience .experience-img {
-  background: url('../images/bosch.jpg') no-repeat;
+  width: 100%;
+  height: 100%; 
+}
+
+#experience .experience-photo {
+  display: flex !important;
+  align-items: center center !important;
+  justify-content: center center !important;
 }
 
 #experience .media-heading {
   margin-bottom: 0px;
 }
+
 
 #experience .media .fa {
   font-size: 42px;
@@ -469,7 +478,12 @@ a:hover, a:active, a:focus {
 
 #education .media .fa {
   font-size: 42px;
-  margin-right: 14px;
+  margin-right: 15px;
+}
+#education .education-links {
+  color:white; 
+  text-decoration: underline !important; 
+  text-decoration-color: white
 }
 
 #education small {
@@ -477,39 +491,6 @@ a:hover, a:active, a:focus {
   font-weight: bold;
 }
 
-
-
-/*---------------------------------------
-   Quotes section              
------------------------------------------*/
-
-#quotes {
-    background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    position: relative;
-    padding: 100px 0px;
-}
-
-#quotes .overlay {
-    background: #121212;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    opacity: 0.7;
-}
-
-#quotes .fa {
-  font-size: 42px;
-  margin-top: 32px;
-  margin-bottom: 22px;
-}
-
-#quotes p {
-  padding-top: 32px;
-}
 
 
 /*---------------------------------------
@@ -522,16 +503,14 @@ a:hover, a:active, a:focus {
 
 #contact .contact-form,
 #contact .contact-thumb {
-  padding: 22px 32px 22px 32px;
+  padding: 18px 32px 18px 32px;
   min-height: 75vh;
 }
 #contact .contact-cv {
-text-decoration: line-through;
+text-decoration: underline !important;
 text-decoration-color: white;
 color:white;
 font-size: 22px;
-
-
 }
 
 #contact .contact-img {
@@ -550,19 +529,20 @@ font-size: 22px;
 #contact .form-control::-webkit-input-placeholder{color:#ffffff}
 
 #contact .form-control {
-  background-color:lightsalmon;
+  background-color:rgb(255, 160, 122);
   border-color: gray;
   border-radius: 0px;
   box-shadow: black;
   color: #ffffff;
   font-size: 22px;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   transition: all 0.4s ease-in-out;
 }
 
 #contact .form-control:focus {
-  border-bottom-color: #ffffff;
+  /* border-bottom-color: #ffffff; */
+  background-color:rgb(255, 205, 185);
 }
 
 #contact input {
@@ -574,6 +554,7 @@ font-size: 22px;
   border: 2px solid transparent;
   border-radius: 40px;
   color: #161616;
+  margin-top: 0; 
   padding-bottom: 10px;
 }
 
@@ -594,10 +575,8 @@ font-size: 22px;
 -----------------------------------------*/
 
 footer {
-    padding: 140px 0px;
+    padding: 00px 0px;
 }
-
-
 
 /*---------------------------------------
    Social icon             
@@ -629,7 +608,7 @@ footer {
     text-align: center;
     vertical-align: middle;
     position: relative;
-    margin: 22px 4px 10px 4px;
+    margin: 18px 4px 10px 4px;
 }
 
 .social-icon li a:hover {
