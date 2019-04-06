@@ -85,7 +85,7 @@ p {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1.6px;
-  padding: 12px 36px;
+  padding: 6px 36px;
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
   text-transform: uppercase;
@@ -355,6 +355,7 @@ a:focus {
 
 #home h1 {
   padding-bottom: 18px;
+  padding-top: 50px;
 }
 
 #home .col-md-6 {
